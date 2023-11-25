@@ -1,7 +1,7 @@
 import './style.css';
 import { useState } from 'react';
 
-export const Joke = ({ avatar, name, text, likes, dislikes }) => {
+export const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
   const [upLikes, setUpLikes] = useState(likes);
   const [downLikes, setDownLikes] = useState(dislikes);
 
@@ -17,8 +17,8 @@ export const Joke = ({ avatar, name, text, likes, dislikes }) => {
     <>
       <div className="joke__body">
         <div className="joke__user">
-          <img className="user-avatar" src={avatar} alt={name} />
-          <p className="user-name">{name}</p>
+          <img className="user-avatar" src={userAvatar} alt={userName} />
+          <p className="user-name">{userName}</p>
         </div>
 
         <p className="joke__text">{text}</p>

@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from 'react';
 import './style.css';
-// import { JokeBody } from '../../components/JokeBody';
-// import { JokeLikes } from '../../components/JokeLikes';
+// // import { JokeBody } from '../../components/JokeBody';
+// // import { JokeLikes } from '../../components/JokeLikes';
 import { Joke } from '../../components/Joke';
 
 const response = await fetch('http://localhost:4000/api/jokes');
